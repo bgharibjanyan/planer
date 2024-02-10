@@ -1,0 +1,30 @@
+.select-container {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.select-label {
+  position: absolute;
+  background-color: white;
+  top: -5px;
+  left: 10px;
+  font-size: 10px;
+  color: #b6b6b6;
+}
+
+.select {
+  background-color: white;
+  height: 38px;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid rgb(237, 237, 237);
+  padding: 5px;
+
+
+  option {
+    height: 30px;
+    line-height: 30px;
+  }
+}

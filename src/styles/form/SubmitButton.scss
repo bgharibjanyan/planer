@@ -1,0 +1,19 @@
+.login-submit{
+  width:100%;
+  background-color: #d7156f;
+  border:none;
+  padding:10px;
+  border-radius:5px;
+  margin-top: 30px;
+  .content{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight:700
+  }
+}
+
+.login-submit:hover {
+  background-color: #b82065;
+  cursor: pointer;
+}
+
