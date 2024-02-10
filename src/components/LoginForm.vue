@@ -34,7 +34,6 @@ const CryptoJS = require("crypto-js");
 export default {
   name: 'LoginForm',
   components: {
-
     SubmitButton,
     CustomInput,
 
@@ -58,6 +57,7 @@ export default {
 
       if(responce === this.formData.username){
         localStorage.setItem('username', responce);
+        await this.$router.push('/PersonalPage');
 
       }else {
         console.log('failed')

@@ -23,4 +23,19 @@ export default class ApiManager {
             console.error('Error signing in:', error);
         }
     }
+    async addToTasks(formData) {
+        try {
+            const postData = new FormData();
+            const data=JSON.stringify(formData)
+            postData.append('task', data);
+            const response = await this.api.post('addTask.php', postData);
+
+
+            if (response.data) {
+                return response.data;
+            }
+        } catch (error) {
+            console.error('Error signing in:', error);
+        }
+    }
 }
